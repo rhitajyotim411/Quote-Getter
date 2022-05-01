@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Get a Quote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        const motive = () =>{
+            qt = ['Inspired','Motivated','Love','Dreaming','Emotional','Happy','Friends']
+            ix = document.getElementById("cat").selectedIndex
+            document.getElementById("motive").innerHTML = qt[ix] + '?'
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="middle">
+        <article>
+            <h1><i id="motive">Inspired?</i>...</h1>&emsp;
+            <h3>Get a Quote</h3>
+        </article>
+        <center>
+        <form action="/quote" method="POST">
+            <div class="box">
+                <select id="cat" name="cat" onchange="motive()">
+                    <option value="inspirational">Inspirational</option>
+                    <option value="motivational">Motivational</option>
+                    <option value="love">Love</option>
+                    <option value="dreaming">Dreaming</option>
+                    <option value="emotional">Emotional</option>
+                    <option value="happiness">Happiness</option>
+                    <option value="friendship">Friendship</option>
+                </select>
+            </div>
+            &emsp;<button class="btn" type="submit">Get Quote</button>
+        </form>
+        </center>
+    </div>
+</body>
+
+</html>

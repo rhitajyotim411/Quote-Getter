@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Get a Quote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function playAdo() {
+            ado = document.getElementById("quote")
+            ado.oncanplaythrough = () => {
+                ado.play()
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <audio id="quote">
+        <source src="{{ url }}" type="audio/mpeg">
+    </audio>
+
+    <article>
+        <h2 style="font-size: 40px;">Your Inspirational quote:</h2><br>
+        <h1 style="font-size: 50px; margin: 20px;">{{ qt }}</h1><br>
+        <h3 style="font-size: 30px;">~ {{ ath }}</h3>
+    </article><br>
+
+    <center>
+        <form action="/quote" method="POST">
+            <div class="box">
+                <select name="cat">
+                    <option value="inspirational" {% if opt=="inspirational" %} selected {% endif %}>Inspirational
+                    </option>
+                    <option value="motivational" {% if opt=="motivational" %} selected {% endif %}>Motivational
+                    </option>
+                    <option value="love" {% if opt=="love" %} selected {% endif %}>Love</option>
+                    <option value="dreaming" {% if opt=="dreaming" %} selected {% endif %}>Dreaming</option>
+                    <option value="emotional" {% if opt=="emotional" %} selected {% endif %}>Emotional</option>
+                    <option value="happiness" {% if opt=="happiness" %} selected {% endif %}>Happiness</option>
+                    <option value="friendship" {% if opt=="friendship" %} selected {% endif %}>Friendship</option>
+                </select>
+            </div>
+            &emsp;<button class="btn" type="submit">Get Another</button>
+        </form>
+    </center>
+    <script>
+        window.onload = playAdo()
+    </script>
+</body>
+
+</html>
