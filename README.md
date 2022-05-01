@@ -13,3 +13,9 @@ To run the webapp execute the following command inside the application folder: -
 ```
 $ python app.py
 ```
+
+# Python dependencies
+
+* Flask ```$ pip install Flask```
+* pandas ```$ pip install pandas```
+* pyttsx3 ```$ pip install pyttsx3```

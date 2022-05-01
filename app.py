@@ -1,5 +1,4 @@
 import pandas as pd
-# from gtts import gTTS
 import pyttsx3
 from flask import Flask, render_template, request
 import base64
@@ -11,10 +10,6 @@ df = pd.read_csv("quotes.csv", dtype="string").dropna()
 
 
 def ado(qt):
-    # audio = 'speech.mp3'
-    # language = 'en'
-    # sp = gTTS(text=qt, lang=language, tld='co.in', slow=False)
-    # sp.save(audio)
     engine = pyttsx3.init()
     engine.setProperty('rate', 120)
     engine.runAndWait()
