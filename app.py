@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 import base64
 import zipfile
 import io
-# import pyttsx3
 from gtts import gTTS
 
 app = Flask(__name__)
@@ -15,12 +14,6 @@ df = pd.read_csv(fl, dtype="string").dropna()
 
 
 def ado(qt):
-    # engine = pyttsx3.init()
-    # engine.setProperty('rate', 120)
-    # engine.runAndWait()
-    # engine.save_to_file(qt, 'speech.mp3')
-    # engine.runAndWait()
-
     audio = 'speech.mp3'
     language = 'en'
     sp = gTTS(text=qt, lang=language, tld='co.in', slow=False)

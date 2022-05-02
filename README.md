@@ -22,6 +22,6 @@ $ flask run
 
 # Website
 
-The above Webapp is hosted on Heroku platform. The link is given below
+The above Webapp is hosted on Heroku platform. The link is given below: -
 
 <https://get-quoted.herokuapp.com/>
