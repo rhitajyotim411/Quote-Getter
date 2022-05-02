@@ -104,3 +104,19 @@ h3 {
     font-size: 30px;
     display: inline-block;
 }
+
+#hlink {
+    font-size: 20px;
+    color: #1173dc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    height: 25px;
+    width: 90px;
+    text-align: center;
+    margin: 30px 0px 0px 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}

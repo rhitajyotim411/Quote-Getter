@@ -10,7 +10,7 @@ The dataset **quotes.csv** is zipped inside **quotes.zip** which the program int
 
 * Flask     ```$ pip install Flask```
 * pandas    ```$ pip install pandas```
-* pyttsx3   ```$ pip install pyttsx3```
+* gTTS   ```$ pip install gTTS```
 
 # Run the webapp
 
@@ -19,3 +19,9 @@ To run the webapp execute the following command inside the application folder: -
 ```
 $ flask run
 ```
+
+# Website
+
+The above Webapp is hosted on Heroku platform. The link is given below
+
+<https://get-quoted.herokuapp.com/>
