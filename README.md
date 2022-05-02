@@ -1,10 +1,10 @@
 # Introduction
 
-The webapp selects a quote based on category from a dataset of quotes and then the quote is spoken out loud (text-to-speech)
+The webapp selects a quote based on category from a dataset of quotes and then the quote is spoken out loud (text-to-speech).
 
 # Access the dataset
 
-The dataset needs to be accessed for successfully running the webapp. The **quotes.zip** zipped file needs to be unzipped in order to access the dataset. The extracted dataset must be placed under the application folder (where **app.py** is present)
+The dataset **quotes.csv** is zipped inside **quotes.zip** which the program internally unzips to read the data. To manually read the data the user needs to unzip it manually and extract the **.csv** file.
 
 # Python dependencies
 

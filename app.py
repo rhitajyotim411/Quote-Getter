@@ -1,11 +1,12 @@
 import pandas as pd
-import pyttsx3
 from flask import Flask, render_template, request
-import base64
+import base64, pyttsx3, zipfile, io
 
 app = Flask(__name__)
 
-df = pd.read_csv("quotes.csv", dtype="string").dropna()
+archive = zipfile.ZipFile('quotes.zip', 'r')
+fl = io.BytesIO(archive.read('quotes.csv'))
+df = pd.read_csv(fl, dtype="string").dropna()
 # Dataset from kaggle
 
 
