@@ -17,5 +17,5 @@ The dataset **quotes.csv** is zipped inside **quotes.zip** which the program int
 To run the webapp execute the following command inside the application folder: -
 
 ```
-$ python app.py
+$ flask run
 ```
