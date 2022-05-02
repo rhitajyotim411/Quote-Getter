@@ -1,3 +1,4 @@
 speech.mp3
 *.csv
 __pycache__
+venv
