@@ -19,9 +19,3 @@ To run the webapp execute the following command inside the application folder: -
 ```
 $ flask run
 ```
-
-# Website
-
-The above Webapp is hosted on Heroku platform. The link is given below: -
-
-<https://get-quoted.herokuapp.com/>
